@@ -1,0 +1,171 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #dde5f4, #898f99);
+    color: #a29494;
+    line-height: 1.6;
+    min-height: 100vh;
+    padding: 0 2rem;
+}
+
+
+header {
+    text-align: center;
+    padding: 4rem 0;
+}
+
+header h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+    color: #f9f9f9;
+}
+
+header p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #dcdcdc;
+}
+
+.Skill {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    padding: 4rem 0;
+}
+.Skill-item {
+    background: #fbefef;
+    color: #090707;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(215, 208, 208, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+
+.Skill-item img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    height: 200px;
+}
+.skill-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 15px rgba(7, 7, 7, 0.2);
+}
+
+.Skill-item h3 {
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+
+.Skill-item p {
+    margin: 0 1rem 1rem;
+    font-size: 1rem;
+    color: #666;
+}
+
+
+
+.portfolio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    padding: 4rem 0;
+}
+
+.portfolio-item {
+    background: #e0bebe;
+    color: #0d0b0b;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.portfolio-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 15px rgba(8, 8, 8, 0.2);
+}
+
+.portfolio-item img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    height: 200px;
+}
+
+.portfolio-item h3 {
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+
+.portfolio-item p {
+    margin: 0 1rem 1rem;
+    font-size: 1rem;
+    color: #666;
+}
+
+
+.contact {
+    text-align:left;
+    padding: 4rem 0;
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #f9f9f9;
+}
+
+.contact a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background: #ced3da;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    border-radius: 25px;
+    margin-top: 1rem;
+    transition: background 0.3s;
+}
+
+.contact a:hover {
+    background: #1151c8;
+}
+
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: rgba(16, 13, 13, 0.7);
+    font-size: 0.9rem;
+    color: #efe9e9;
+    margin-top: 2rem;
+}
+
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    .portfolio-item h3 {
+        font-size: 1.5rem;
+    }
+    .Skill-item h3{
+        font-size: 1.7rem;
+    }
+
+    .contact h2 {
+        font-size: 8rem;
+    }
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio Website">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: seashell;
+            color: #333;
+        }
+        header {
+            background: #4CAF50;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #333;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 1rem;
+            transition: background 0.3s;
+        }
+        nav a:hover {
+            background: #4CAF50;
+        }
+        section {
+            padding: 2rem;
+            text-align: center;
+        }
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            padding: 2rem;
+        }
+        .portfolio-item {
+            background: #cfabab;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            padding: 1rem;
+            border-radius: 5px;
+        }
+        Skill-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            padding: 2rem;
+        }
+        .Skill-item {
+            background: #c8b6b6;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            padding: 1rem;
+            border-radius: 7px;
+        }
+        footer {
+            text-align: center;
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+        <p>Showcasing My work and achievements</p>
+    </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hi, I am Anant, a software developer very passionate about development and i always try to make user friendly, 
+            easy to use website which gives Amazing experience to users.</p>
+    </section>
+    <section id="Skill">
+        <h2> My skills</h2>
+        <div class="skill-grid">
+            <div class="skill-item">
+                <h3> Skill 1</h3>
+                <p> full stack Web Development</p>
+        </div>
+        <div class="skill-item">
+            <h3> Skill 2</h3>
+            <p> Java programming</p>
+        </div>
+        <div class="skill-item">
+            <h3> Skill 3</h3>
+            <p> Music production</p>
+        </div>
+        </div>
+    </section>
+    <section id="portfolio">
+        <h2>My Work</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <h3>Project 1</h3>
+                <p>Ambulance Booking website.</p>
+            </div>
+            <div class="portfolio-item">
+                <h3>Project 2</h3>
+                <p>working on more enhance, easy to use student management system website.</p>
+            </div>
+            <div class="portfolio-item">
+                <h3>Project 3</h3>
+                <p> chat website for different users from the world.</p>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:your.email@example.com">anantpathak564@gmail.com</a></p>
+        <p>Phone: +91 6388575523</p>
+    </section>
+    <footer>
+        <p>&copy; 2025 Anant(myportfolio). All Rights Reserved.</p>
+    </footer>
+    <script src="sheet.js"></script>
+    <script type="text/babel">
+       </script>
+</body>
+</html>
